@@ -12,5 +12,10 @@
     @include flex-center;
     gap: 30px;
     list-style: none;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }

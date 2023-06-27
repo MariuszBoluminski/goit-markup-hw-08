@@ -1,23 +1,54 @@
 .page-banner {
+  max-width: 480px;
+  height: 400px;
+  background: $page-banner-color url(../images/bckgimgMobile1x.jpg) no-repeat
+    50% 50% / cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bckgimgMobile2x.jpg);
+  }
   margin: 0 auto;
-  max-width: 1600px;
-  height: 600px;
-  background-image: $page-banner-gradient, $people-squoosh-image;
-
-  background-size: cover;
   color: $white-font-color;
-  padding-top: 200px;
+
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet {
+    background: url(../images/bckgimgTabletx1.jpg) no-repeat 50% 50% / cover;
+    max-width: 768px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bckgimgTabletx2.jpg);
+    }
+  }
+  @include desktop {
+    background: url(../images/bckgimgPCx1.jpg) no-repeat 50% 50% / cover;
+    max-width: 1600px;
+    height: 600px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bckgimgPCx2.jpg);
+    }
+  }
 
   &__banner-title {
-    font-size: 44px;
+    color: $white-font-color;
+    font-size: 26px;
     font-weight: 900;
     line-height: 1.3em;
     letter-spacing: 0.06em;
-    max-width: 696px;
     margin: 0 auto;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @include desktop {
+      font-size: 44px;
+    }
   }
 
   &__banner-button {

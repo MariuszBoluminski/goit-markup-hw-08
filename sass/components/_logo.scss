@@ -12,4 +12,10 @@
       color: $white-font-color;
     }
   }
+  &--align-center {
+    text-align: center;
+    @include desktop {
+      text-align: left;
+    }
+  }
 }

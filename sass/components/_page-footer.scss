@@ -1,12 +1,51 @@
 .page-footer {
   background-color: $general-gray-color;
+  &__flex-again {
+    @include tablet {
+      display: flex;
+      gap: 144px;
+    }
+    @include desktop {
+      gap: 70px;
+    }
+  }
 
   &__section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  &__flex-all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &__flexible {
     display: flex;
-    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
+  }
+  &__addresss {
+    text-align: center;
+    @include tablet {
+      margin-bottom: 60px;
+      gap: 70px;
+    }
+    @include desktop {
+      text-align: left;
+      width: 246px;
+      height: 81px;
+      margin-bottom: 0;
+    }
+  }
+  &__join-to-us {
+    @include tablet {
+    }
   }
 }

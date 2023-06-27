@@ -4,10 +4,29 @@
 
   &__flex-container {
     @include flex-center-space;
-    height: 80px;
+    height: 60px;
+    @include tablet {
+      height: 80px;
+    }
   }
-  &__gap-container {
-    @include flex-center-space;
-    gap: 30%;
+
+  &__contakt {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__hamburger {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    &:hover,
+    &:focus {
+      fill: $general-blue-color;
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
 }
