@@ -21,38 +21,50 @@
   <body>
     <header class="web-header">
       <div class="web-header__flex-container container">
-        <div class="web-header__gap-container">
-          <a class="logo" href="index.html">
-            <span class="logo__title">Web</span>Studio</a
-          >
+        <a class="logo" href="index.html">
+          <span class="logo__title">Web</span>Studio</a
+        >
+        <button
+          class="web-header__hamburger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use href="./images/icon-menu.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="navigation__menu-list">
+            <li>
+              <a href="index.html" class="navigation__link">Agencja</a>
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="navigation__link navigation--curret navigation--active"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="#" class="navigation__link">Kontakt</a></li>
+          </ul>
+        </nav>
 
-          <nav class="navigation">
-            <ul class="navigation__menu-list">
-              <li>
-                <a href="index.html" class="navigation__link">Agencja</a>
-              </li>
-              <li>
-                <a
-                  href="portfolio.html"
-                  class="navigation__link navigation--curret navigation--active"
-                  >Portfolio</a
-                >
-              </li>
-              <li><a href="#" class="navigation__link">Kontakt</a></li>
-            </ul>
-          </nav>
-        </div>
-        <nav>
-          <ul class="contact">
-            <li class="contact__title">
+        <nav class="web-header__contact">
+          <div class="contact">
+            <span class="contact__title">
               <a class="contact__link" href="mailto:info@devstudio.com">
-                <svg class="contact__icon" width="16" height="12">
+                <svg
+                  class="contact__icon"
+                  width="16"
+                  height="12"
+                  viewbox="0 0 16 12"
+                >
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
-            </li>
-            <li class="contact__title">
+            </span>
+            <span class="contact__title">
               <a class="contact__link" href="tel:+48111111111">
                 <svg
                   class="contact__icon"
@@ -64,8 +76,8 @@
                 </svg>
                 +48 111 111 111
               </a>
-            </li>
-          </ul>
+            </span>
+          </div>
         </nav>
       </div>
     </header>
@@ -322,58 +334,60 @@
     </section>
     <footer class="page-footer">
       <section class="container page-footer__section page-footer__flexible">
-        <section>
-          <a class="logo">
-            <span class="logo__title">Web</span
-            ><span class="logo__title--accent">Studio</span>
-          </a>
-          <address class="page-footer__addresss">
-            <ul class="address">
-              <li class="address__item">
-                <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+        <div class="page-footer__flex-again">
+          <section class="page-footer__flex-all">
+            <a class="logo logo--align-center">
+              <span class="logo__title">Web</span
+              ><span class="logo__title--accent">Studio</span>
+            </a>
+            <address class="page-footer__addresss">
+              <ul class="address">
+                <li class="address__item">
+                  <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+                </li>
+                <li class="address__item">
+                  <p>
+                    <a class="address__link" href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </p>
+                </li>
+                <li class="address__item">
+                  <p>
+                    <a class="address__link" href="tel:+48111111111"
+                      >+48 111 111 111</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </address>
+          </section>
+          <section class="page-footer__join-to-us">
+            <h2 class="widget__heading">Dołącz do nas</h2>
+            <ul class="widget">
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </li>
-              <li class="address__item">
-                <p>
-                  <a class="address__link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </p>
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
               </li>
-              <li class="address__item">
-                <p>
-                  <a class="address__link" href="tel:+48111111111"
-                    >+48 111 111 111</a
-                  >
-                </p>
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
               </li>
             </ul>
-          </address>
-        </section>
-        <section>
-          <h2 class="widget__heading">Dołącz do nas</h2>
-          <ul class="widget">
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </li>
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </li>
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </li>
-          </ul>
-        </section>
+          </section>
+        </div>
         <section>
           <form name="newsletter" class="newsletter">
             <label for="user_email" class="widget__heading newsletter__label"

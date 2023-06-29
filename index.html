@@ -28,38 +28,37 @@
   <body>
     <header class="web-header">
       <div class="web-header__flex-container container">
-        
-          <a class="logo" href="index.html">
-            <span class="logo__title">Web</span>Studio</a
-          >
-          <button
-            class="web-header__hamburger js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="24" height="16">
-              <use href="./images/icon-menu.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
-          <nav class="navigation">
-            <ul class="navigation__menu-list">
-              <li>
-                <a
-                  href="index.html"
-                  class="navigation__link navigation--curret navigation--active"
-                  >Agencja</a
-                >
-              </li>
-              <li>
-                <a href="portfolio.html" class="navigation__link">Portfolio</a>
-              </li>
-              <li><a href="#" class="navigation__link">Kontakt</a></li>
-            </ul>
-          </nav>
-        </div>
-        <nav>
-          <ul class="contact">
-            <li class="contact__title">
+        <a class="logo" href="index.html">
+          <span class="logo__title">Web</span>Studio</a
+        >
+        <button
+          class="web-header__hamburger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use href="./images/icon-menu.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="navigation__menu-list">
+            <li>
+              <a
+                href="index.html"
+                class="navigation__link navigation--curret navigation--active"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="navigation__link">Portfolio</a>
+            </li>
+            <li><a href="#" class="navigation__link">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <nav class="web-header__contact">
+          <div class="contact">
+            <span class="contact__title">
               <a class="contact__link" href="mailto:info@devstudio.com">
                 <svg
                   class="contact__icon"
@@ -71,8 +70,8 @@
                 </svg>
                 info@devstudio.com
               </a>
-            </li>
-            <li class="contact__title">
+            </span>
+            <span class="contact__title">
               <a class="contact__link" href="tel:+48111111111">
                 <svg
                   class="contact__icon"
@@ -84,14 +83,14 @@
                 </svg>
                 +48 111 111 111
               </a>
-            </li>
-          </ul>
+            </span>
+          </div>
         </nav>
       </div>
     </header>
     <main>
-      <section class="page-banner">
-        <div class="container">
+      <section class="page-banner container">
+        <div>
           <h1 class="page-banner__banner-title">
             EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
           </h1>
@@ -109,7 +108,7 @@
         <div class="container">
           <section class="section">
             <ul class="main-list">
-              <li>
+              <li class="main-list__item">
                 <div class="main-list__card">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-antenna"></use>
@@ -121,7 +120,7 @@
                   vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
+              <li class="main-list__item">
                 <div class="main-list__card">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-clock"></use>
@@ -133,7 +132,7 @@
                   vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
+              <li class="main-list__item">
                 <div class="main-list__card">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-diagram"></use>
@@ -145,7 +144,7 @@
                   vel arcu sem. Sed non sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
+              <li class="main-list__item">
                 <div class="main-list__card">
                   <svg width="70" height="70">
                     <use href="./images/icons.svg#icon-astronaut"></use>
@@ -473,58 +472,58 @@
     <footer class="page-footer">
       <section class="container page-footer__section page-footer__flexible">
         <div class="page-footer__flex-again">
-        <section class="page-footer__flex-all">
-          <a class="logo logo--align-center">
-            <span class="logo__title">Web</span
-            ><span class="logo__title--accent">Studio</span>
-          </a>
-          <address class="page-footer__addresss">
-            <ul class="address">
-              <li class="address__item">
-                <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+          <section class="page-footer__flex-all">
+            <a class="logo logo--align-center">
+              <span class="logo__title">Web</span
+              ><span class="logo__title--accent">Studio</span>
+            </a>
+            <address class="page-footer__addresss">
+              <ul class="address">
+                <li class="address__item">
+                  <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+                </li>
+                <li class="address__item">
+                  <p>
+                    <a class="address__link" href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </p>
+                </li>
+                <li class="address__item">
+                  <p>
+                    <a class="address__link" href="tel:+48111111111"
+                      >+48 111 111 111</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </address>
+          </section>
+          <section class="page-footer__join-to-us">
+            <h2 class="widget__heading">Dołącz do nas</h2>
+            <ul class="widget">
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </li>
-              <li class="address__item">
-                <p>
-                  <a class="address__link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </p>
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
               </li>
-              <li class="address__item">
-                <p>
-                  <a class="address__link" href="tel:+48111111111"
-                    >+48 111 111 111</a
-                  >
-                </p>
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="social-media__item widget__item">
+                <svg class="social-media__item--accent" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
               </li>
             </ul>
-          </address>
-        </section>
-        <section class="page-footer__join-to-us">
-          <h2 class="widget__heading">Dołącz do nas</h2>
-          <ul class="widget">
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </li>
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </li>
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="social-media__item widget__item">
-              <svg class="social-media__item--accent" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </li>
-          </ul>
-        </section>
+          </section>
         </div>
         <section>
           <form name="newsletter" class="newsletter">
@@ -574,9 +573,7 @@
         </label>
 
         <label class="modal__position-box">
-          <span class="modal__label modal__position-item" for="telephone"
-            >Telefon</span
-          >
+          <span class="modal__label modal__position-item">Telefon</span>
           <input
             id="telephone"
             class="modal__input modal__position-item"
@@ -589,9 +586,7 @@
         </label>
 
         <label class="modal__position-box">
-          <span class="modal__label modal__position-item" for="email"
-            >email</span
-          >
+          <span class="modal__label modal__position-item">email</span>
           <input
             class="modal__input modal__position-item"
             type="email"
@@ -637,7 +632,13 @@
       </form>
     </div>
 
-    <div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-container__close-btn js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images/vector.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <div>
         <ul class="menu-mobile">
           <li class="menu-mobile__item">
             <a class="menu-mobile__link" href="./index.html">Agencja</a>

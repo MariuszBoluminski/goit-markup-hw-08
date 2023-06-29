@@ -34,13 +34,11 @@
     letter-spacing: 0.02em;
     transition-property: color;
     transition: $general-transition;
-    &:hover,
-    &:focus {
-      color: $general-blue-color;
-    }
+
+    color: $general-blue-color;
   }
   &__mail {
-    color: $general-font-color;
+    color: $contact-color;
     text-decoration: none;
     font-size: 24px;
     font-weight: 500;
@@ -63,6 +61,7 @@
   &__border {
     color: transparent;
     border-right: 1px solid #21212133;
+    margin: 0 5px;
   }
   &__social-link-link {
     color: $general-blue-color;

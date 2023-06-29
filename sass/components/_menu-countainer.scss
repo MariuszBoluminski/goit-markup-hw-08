@@ -12,11 +12,10 @@
   transform: translateX(100%);
   transition: $general-transition;
   padding: 48px 40px;
-
   &__close-btn {
     position: absolute;
-    top: 27px;
-    right: 18px;
+    top: 10px;
+    right: 15px;
     background-color: transparent;
     border: none;
     transition-property: fill;
