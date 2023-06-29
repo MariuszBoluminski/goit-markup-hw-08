@@ -1,7 +1,8 @@
 .page-banner {
   max-width: 480px;
   height: 400px;
-  background: url(../images/head-imgMobilex1.jpg) no-repeat 50% 50% / cover;
+  background: $page-banner-color url(../images/head-imgMobilex1.jpg) no-repeat
+    50% 50% / cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -16,7 +17,8 @@
   justify-content: center;
 
   @include tablet {
-    background: url(../images/bckgimgTablet1x.jpg) no-repeat 50% 50% / cover;
+    background: $page-banner-color url(../images/bckgimgTablet1x.jpg) no-repeat
+      50% 50% / cover;
     max-width: 768px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
