@@ -1,12 +1,13 @@
 .acceptance {
   display: flex;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $contact-color;
   margin-left: 55px;
   align-items: center;
+
   margin-top: 16px;
 
   &__checkbox-hidden {
@@ -17,7 +18,6 @@
   &__checkbox-icon-unchecked {
     position: relative;
 
-    margin-left: 7px;
     width: 16px;
     height: 15px;
 
@@ -29,8 +29,9 @@
 
   &__checkbox-icon {
     position: absolute;
+
     margin-top: 3px;
-    margin-left: 7px;
+
     margin-bottom: 3px;
     visibility: hidden;
     fill: $white-font-color;

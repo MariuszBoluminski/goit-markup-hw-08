@@ -1,8 +1,8 @@
 .page-banner {
   max-width: 480px;
   height: 400px;
-  background: $page-banner-color url(../images/bckgimgMobile1x.jpg) no-repeat
-    50% 50% / cover;
+  background: $page-banner-color url(../images/bckgimgMobile1x.jpg) no-repeat /
+    cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -17,12 +17,12 @@
   justify-content: center;
 
   @include tablet {
-    background: url(../images/bckgimgTabletx1.jpg) no-repeat 50% 50% / cover;
+    background: url(../images/bckgimgTablet1x.jpg) no-repeat 50% 50% / cover;
     max-width: 768px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bckgimgTabletx2.jpg);
+      background-image: url(../images/bckgimgTablet2x.jpg);
     }
   }
   @include desktop {

@@ -19,7 +19,9 @@
   margin: auto;
   background: $white-font-color;
   box-shadow: $modal-shadow;
+  max-width: 528px;
   width: calc(100% - 30px);
+  border-radius: 4px;
   @include tablet {
     width: 60vw;
   }
