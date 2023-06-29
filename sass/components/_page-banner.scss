@@ -1,12 +1,11 @@
 .page-banner {
   max-width: 480px;
   height: 400px;
-  background: $page-banner-color url(../images/bckgimgMobile1x.jpg) no-repeat /
-    cover;
+  background: url(../images/head-imgMobilex1.jpg) no-repeat 50% 50% / cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/bckgimgMobile2x.jpg);
+    background-image: url(../images/head-imgMobilex2.jpg);
   }
   margin: 0 auto;
   color: $white-font-color;
